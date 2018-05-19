@@ -1,0 +1,2096 @@
+{
+  "contractName": "Donate",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "donor",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "donors",
+      "outputs": [
+        {
+          "name": "donorName",
+          "type": "string"
+        },
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "acceptors",
+      "outputs": [
+        {
+          "name": "acceptorName",
+          "type": "string"
+        },
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6000806000806040805190810160405280600481526020017f4164616d00000000000000000000000000000000000000000000000000000000815250846000019080519060200190610062929190610180565b506103e884600101819055506040805190810160405280600381526020017f45766500000000000000000000000000000000000000000000000000000000008152508360000190805190602001906100bb929190610180565b506103e883600101819055506040805190810160405280600481526020017f586d656e00000000000000000000000000000000000000000000000000000000815250826000019080519060200190610114929190610180565b50600082600101819055506040805190810160405280600681526020017f466f6f626172000000000000000000000000000000000000000000000000000081525081600001908051906020019061016c929190610180565b506000816001018190555050505050610225565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101c157805160ff19168380011785556101ef565b828001600101855582156101ef579182015b828111156101ee5782518255916020019190600101906101d3565b5b5090506101fc9190610200565b5090565b61022291905b8082111561021e576000816000905550600101610206565b5090565b90565b6103c0806102346000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806325223bd41461005c5780634abfa163146100b1578063bc13b92114610154575b600080fd5b341561006757600080fd5b61006f6101f7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100bc57600080fd5b6100d2600480803590602001909190505061021c565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156101185780820151818401526020810190506100fd565b50505050905090810190601f1680156101455780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b341561015f57600080fd5b61017560048080359060200190919050506102d8565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156101bb5780820151818401526020810190506101a0565b50505050905090810190601f1680156101e85780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6001602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102c85780601f1061029d576101008083540402835291602001916102c8565b820191906000526020600020905b8154815290600101906020018083116102ab57829003601f168201915b5050505050908060010154905082565b6002602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103845780601f1061035957610100808354040283529160200191610384565b820191906000526020600020905b81548152906001019060200180831161036757829003601f168201915b50505050509080600101549050825600a165627a7a72305820c4d89538b5b288903cae421567fad763da7a6c53734c8eb6655c4b306778da010029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806325223bd41461005c5780634abfa163146100b1578063bc13b92114610154575b600080fd5b341561006757600080fd5b61006f6101f7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100bc57600080fd5b6100d2600480803590602001909190505061021c565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156101185780820151818401526020810190506100fd565b50505050905090810190601f1680156101455780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b341561015f57600080fd5b61017560048080359060200190919050506102d8565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156101bb5780820151818401526020810190506101a0565b50505050905090810190601f1680156101e85780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6001602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102c85780601f1061029d576101008083540402835291602001916102c8565b820191906000526020600020905b8154815290600101906020018083116102ab57829003601f168201915b5050505050908060010154905082565b6002602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103845780601f1061035957610100808354040283529160200191610384565b820191906000526020600020905b81548152906001019060200180831161036757829003601f168201915b50505050509080600101549050825600a165627a7a72305820c4d89538b5b288903cae421567fad763da7a6c53734c8eb6655c4b306778da010029",
+  "sourceMap": "26:578:0:-;;;46:335;;;;;;;;74:20;153;230:21;304;98:26;;;;;;;;;;;;;;;;;;:6;:16;;:26;;;;;;;;;;;;:::i;:::-;;145:4;128:6;:14;;:21;;;;177:24;;;;;;;;;;;;;;;;;;:6;:16;;:24;;;;;;;;;;;;:::i;:::-;;222:4;205:6;:14;;:21;;;;255:26;;;;;;;;;;;;;;;;;;:4;:17;;:26;;;;;;;;;;;;:::i;:::-;;299:1;285:4;:12;;:15;;;;329:28;;;;;;;;;;;;;;;;;;:4;:17;;:28;;;;;;;;;;;;:::i;:::-;;376:1;361:4;:12;;:16;;;;46:335;;;;26:578;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "26:578:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;383:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;406:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;406:37:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;499:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;499:43:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;383:20;;;;;;;;;;;;;:::o;406:37::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;499:43::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract Donate {\n \nfunction Donate() public{\n  Donor storage donor1;\n  donor1.donorName  = \"Adam\";\n  donor1.balance = 1000;\n  Donor storage donor2;\n  donor2.donorName = \"Eve\";\n  donor2.balance = 1000;\n  Acceptor storage acc1;\n  acc1.acceptorName = \"Xmen\";\n  acc1.balance =0;\n  Acceptor storage acc2;\n  acc2.acceptorName = \"Foobar\";\n  acc2.balance = 0;\n }\n address public donor;\n mapping (uint => Donor) public donors;\n struct Donor {\n\tstring donorName;\n\tuint balance;\n }\n mapping (uint => Acceptor) public acceptors;\n struct Acceptor {\n\tstring acceptorName;\n\tuint balance;\n }\n}\n\t\n",
+  "sourcePath": "/Users/himania/Workspaces/blockchain-demo-network/app/contracts/Donate.sol",
+  "ast": {
+    "absolutePath": "/Users/himania/Workspaces/blockchain-demo-network/app/contracts/Donate.sol",
+    "exportedSymbols": {
+      "Donate": [
+        86
+      ]
+    },
+    "id": 87,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 86,
+        "linearizedBaseContracts": [
+          86
+        ],
+        "name": "Donate",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 64,
+              "nodeType": "Block",
+              "src": "70:311:0",
+              "statements": [
+                {
+                  "assignments": [],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 5,
+                      "name": "donor1",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "74:20:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                        "typeString": "struct Donate.Donor storage pointer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 4,
+                        "name": "Donor",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 76,
+                        "src": "74:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "74:20:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 7,
+                        "name": "donor1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "98:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "id": 9,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "donorName",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 73,
+                      "src": "98:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "4164616d",
+                      "id": 10,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "118:6:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_f80dda5e4e26c8fa8da6c8348484950766785152da73113f0d8aadcbcda4865e",
+                        "typeString": "literal_string \"Adam\""
+                      },
+                      "value": "Adam"
+                    },
+                    "src": "98:26:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 12,
+                  "nodeType": "ExpressionStatement",
+                  "src": "98:26:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 17,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 13,
+                        "name": "donor1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "128:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "id": 15,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 75,
+                      "src": "128:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31303030",
+                      "id": 16,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "145:4:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000_by_1",
+                        "typeString": "int_const 1000"
+                      },
+                      "value": "1000"
+                    },
+                    "src": "128:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 18,
+                  "nodeType": "ExpressionStatement",
+                  "src": "128:21:0"
+                },
+                {
+                  "assignments": [],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 20,
+                      "name": "donor2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "153:20:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                        "typeString": "struct Donate.Donor storage pointer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 19,
+                        "name": "Donor",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 76,
+                        "src": "153:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "153:20:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 26,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 22,
+                        "name": "donor2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20,
+                        "src": "177:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "id": 24,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "donorName",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 73,
+                      "src": "177:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "457665",
+                      "id": 25,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "196:5:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_75a9cc5fd7b50279c2043924d80309443980c4ea3301cde47807a320566d1f58",
+                        "typeString": "literal_string \"Eve\""
+                      },
+                      "value": "Eve"
+                    },
+                    "src": "177:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 27,
+                  "nodeType": "ExpressionStatement",
+                  "src": "177:24:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 28,
+                        "name": "donor2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20,
+                        "src": "205:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "id": 30,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 75,
+                      "src": "205:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31303030",
+                      "id": 31,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "222:4:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000_by_1",
+                        "typeString": "int_const 1000"
+                      },
+                      "value": "1000"
+                    },
+                    "src": "205:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 33,
+                  "nodeType": "ExpressionStatement",
+                  "src": "205:21:0"
+                },
+                {
+                  "assignments": [],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 35,
+                      "name": "acc1",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "230:21:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                        "typeString": "struct Donate.Acceptor storage pointer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 34,
+                        "name": "Acceptor",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 85,
+                        "src": "230:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 36,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "230:21:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 41,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 37,
+                        "name": "acc1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 35,
+                        "src": "255:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "id": 39,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "acceptorName",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 82,
+                      "src": "255:17:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "586d656e",
+                      "id": 40,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "275:6:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_6d41198f9b0125ddc4bc53c3c5f5553b661d057477ea9230085b89a22ef67123",
+                        "typeString": "literal_string \"Xmen\""
+                      },
+                      "value": "Xmen"
+                    },
+                    "src": "255:26:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 42,
+                  "nodeType": "ExpressionStatement",
+                  "src": "255:26:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 47,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 43,
+                        "name": "acc1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 35,
+                        "src": "285:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "id": 45,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 84,
+                      "src": "285:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 46,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "299:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "285:15:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 48,
+                  "nodeType": "ExpressionStatement",
+                  "src": "285:15:0"
+                },
+                {
+                  "assignments": [],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 50,
+                      "name": "acc2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "304:21:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                        "typeString": "struct Donate.Acceptor storage pointer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 49,
+                        "name": "Acceptor",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 85,
+                        "src": "304:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "304:21:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 56,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 52,
+                        "name": "acc2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50,
+                        "src": "329:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "id": 54,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "acceptorName",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 82,
+                      "src": "329:17:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "466f6f626172",
+                      "id": 55,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "349:8:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_583bb640e7dec07454ce8180d3a3b7cb3da138134b15bf53d6275f5a59d3695e",
+                        "typeString": "literal_string \"Foobar\""
+                      },
+                      "value": "Foobar"
+                    },
+                    "src": "329:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 57,
+                  "nodeType": "ExpressionStatement",
+                  "src": "329:28:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 62,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 58,
+                        "name": "acc2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50,
+                        "src": "361:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "id": 60,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 84,
+                      "src": "361:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 61,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "376:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "361:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 63,
+                  "nodeType": "ExpressionStatement",
+                  "src": "361:16:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 65,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "Donate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "61:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "70:0:0"
+            },
+            "scope": 86,
+            "src": "46:335:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 67,
+            "name": "donor",
+            "nodeType": "VariableDeclaration",
+            "scope": 86,
+            "src": "383:20:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 66,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "383:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 71,
+            "name": "donors",
+            "nodeType": "VariableDeclaration",
+            "scope": 86,
+            "src": "406:37:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Donor_$76_storage_$",
+              "typeString": "mapping(uint256 => struct Donate.Donor storage ref)"
+            },
+            "typeName": {
+              "id": 70,
+              "keyType": {
+                "id": 68,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "415:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "406:23:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Donor_$76_storage_$",
+                "typeString": "mapping(uint256 => struct Donate.Donor storage ref)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 69,
+                "name": "Donor",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 76,
+                "src": "423:5:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                  "typeString": "struct Donate.Donor storage pointer"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Donate.Donor",
+            "id": 76,
+            "members": [
+              {
+                "constant": false,
+                "id": 73,
+                "name": "donorName",
+                "nodeType": "VariableDeclaration",
+                "scope": 76,
+                "src": "462:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 72,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "462:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 75,
+                "name": "balance",
+                "nodeType": "VariableDeclaration",
+                "scope": 76,
+                "src": "481:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 74,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "481:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Donor",
+            "nodeType": "StructDefinition",
+            "scope": 86,
+            "src": "446:51:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 80,
+            "name": "acceptors",
+            "nodeType": "VariableDeclaration",
+            "scope": 86,
+            "src": "499:43:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Acceptor_$85_storage_$",
+              "typeString": "mapping(uint256 => struct Donate.Acceptor storage ref)"
+            },
+            "typeName": {
+              "id": 79,
+              "keyType": {
+                "id": 77,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "508:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "499:26:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Acceptor_$85_storage_$",
+                "typeString": "mapping(uint256 => struct Donate.Acceptor storage ref)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 78,
+                "name": "Acceptor",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 85,
+                "src": "516:8:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                  "typeString": "struct Donate.Acceptor storage pointer"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Donate.Acceptor",
+            "id": 85,
+            "members": [
+              {
+                "constant": false,
+                "id": 82,
+                "name": "acceptorName",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "564:19:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 81,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "564:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 84,
+                "name": "balance",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "586:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 83,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "586:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Acceptor",
+            "nodeType": "StructDefinition",
+            "scope": 86,
+            "src": "545:57:0",
+            "visibility": "public"
+          }
+        ],
+        "scope": 87,
+        "src": "26:578:0"
+      }
+    ],
+    "src": "0:607:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/himania/Workspaces/blockchain-demo-network/app/contracts/Donate.sol",
+    "exportedSymbols": {
+      "Donate": [
+        86
+      ]
+    },
+    "id": 87,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 86,
+        "linearizedBaseContracts": [
+          86
+        ],
+        "name": "Donate",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 64,
+              "nodeType": "Block",
+              "src": "70:311:0",
+              "statements": [
+                {
+                  "assignments": [],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 5,
+                      "name": "donor1",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "74:20:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                        "typeString": "struct Donate.Donor storage pointer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 4,
+                        "name": "Donor",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 76,
+                        "src": "74:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "74:20:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 7,
+                        "name": "donor1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "98:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "id": 9,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "donorName",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 73,
+                      "src": "98:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "4164616d",
+                      "id": 10,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "118:6:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_f80dda5e4e26c8fa8da6c8348484950766785152da73113f0d8aadcbcda4865e",
+                        "typeString": "literal_string \"Adam\""
+                      },
+                      "value": "Adam"
+                    },
+                    "src": "98:26:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 12,
+                  "nodeType": "ExpressionStatement",
+                  "src": "98:26:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 17,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 13,
+                        "name": "donor1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "128:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "id": 15,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 75,
+                      "src": "128:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31303030",
+                      "id": 16,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "145:4:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000_by_1",
+                        "typeString": "int_const 1000"
+                      },
+                      "value": "1000"
+                    },
+                    "src": "128:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 18,
+                  "nodeType": "ExpressionStatement",
+                  "src": "128:21:0"
+                },
+                {
+                  "assignments": [],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 20,
+                      "name": "donor2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "153:20:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                        "typeString": "struct Donate.Donor storage pointer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 19,
+                        "name": "Donor",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 76,
+                        "src": "153:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "153:20:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 26,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 22,
+                        "name": "donor2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20,
+                        "src": "177:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "id": 24,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "donorName",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 73,
+                      "src": "177:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "457665",
+                      "id": 25,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "196:5:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_75a9cc5fd7b50279c2043924d80309443980c4ea3301cde47807a320566d1f58",
+                        "typeString": "literal_string \"Eve\""
+                      },
+                      "value": "Eve"
+                    },
+                    "src": "177:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 27,
+                  "nodeType": "ExpressionStatement",
+                  "src": "177:24:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 28,
+                        "name": "donor2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20,
+                        "src": "205:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                          "typeString": "struct Donate.Donor storage pointer"
+                        }
+                      },
+                      "id": 30,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 75,
+                      "src": "205:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31303030",
+                      "id": 31,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "222:4:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000_by_1",
+                        "typeString": "int_const 1000"
+                      },
+                      "value": "1000"
+                    },
+                    "src": "205:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 33,
+                  "nodeType": "ExpressionStatement",
+                  "src": "205:21:0"
+                },
+                {
+                  "assignments": [],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 35,
+                      "name": "acc1",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "230:21:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                        "typeString": "struct Donate.Acceptor storage pointer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 34,
+                        "name": "Acceptor",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 85,
+                        "src": "230:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 36,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "230:21:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 41,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 37,
+                        "name": "acc1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 35,
+                        "src": "255:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "id": 39,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "acceptorName",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 82,
+                      "src": "255:17:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "586d656e",
+                      "id": 40,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "275:6:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_6d41198f9b0125ddc4bc53c3c5f5553b661d057477ea9230085b89a22ef67123",
+                        "typeString": "literal_string \"Xmen\""
+                      },
+                      "value": "Xmen"
+                    },
+                    "src": "255:26:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 42,
+                  "nodeType": "ExpressionStatement",
+                  "src": "255:26:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 47,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 43,
+                        "name": "acc1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 35,
+                        "src": "285:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "id": 45,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 84,
+                      "src": "285:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 46,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "299:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "285:15:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 48,
+                  "nodeType": "ExpressionStatement",
+                  "src": "285:15:0"
+                },
+                {
+                  "assignments": [],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 50,
+                      "name": "acc2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "304:21:0",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                        "typeString": "struct Donate.Acceptor storage pointer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 49,
+                        "name": "Acceptor",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 85,
+                        "src": "304:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "304:21:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 56,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 52,
+                        "name": "acc2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50,
+                        "src": "329:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "id": 54,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "acceptorName",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 82,
+                      "src": "329:17:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "466f6f626172",
+                      "id": 55,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "349:8:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_583bb640e7dec07454ce8180d3a3b7cb3da138134b15bf53d6275f5a59d3695e",
+                        "typeString": "literal_string \"Foobar\""
+                      },
+                      "value": "Foobar"
+                    },
+                    "src": "329:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 57,
+                  "nodeType": "ExpressionStatement",
+                  "src": "329:28:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 62,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 58,
+                        "name": "acc2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50,
+                        "src": "361:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                          "typeString": "struct Donate.Acceptor storage pointer"
+                        }
+                      },
+                      "id": 60,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 84,
+                      "src": "361:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 61,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "376:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "361:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 63,
+                  "nodeType": "ExpressionStatement",
+                  "src": "361:16:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 65,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "Donate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "61:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "70:0:0"
+            },
+            "scope": 86,
+            "src": "46:335:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 67,
+            "name": "donor",
+            "nodeType": "VariableDeclaration",
+            "scope": 86,
+            "src": "383:20:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 66,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "383:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 71,
+            "name": "donors",
+            "nodeType": "VariableDeclaration",
+            "scope": 86,
+            "src": "406:37:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Donor_$76_storage_$",
+              "typeString": "mapping(uint256 => struct Donate.Donor storage ref)"
+            },
+            "typeName": {
+              "id": 70,
+              "keyType": {
+                "id": 68,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "415:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "406:23:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Donor_$76_storage_$",
+                "typeString": "mapping(uint256 => struct Donate.Donor storage ref)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 69,
+                "name": "Donor",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 76,
+                "src": "423:5:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Donor_$76_storage_ptr",
+                  "typeString": "struct Donate.Donor storage pointer"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Donate.Donor",
+            "id": 76,
+            "members": [
+              {
+                "constant": false,
+                "id": 73,
+                "name": "donorName",
+                "nodeType": "VariableDeclaration",
+                "scope": 76,
+                "src": "462:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 72,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "462:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 75,
+                "name": "balance",
+                "nodeType": "VariableDeclaration",
+                "scope": 76,
+                "src": "481:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 74,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "481:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Donor",
+            "nodeType": "StructDefinition",
+            "scope": 86,
+            "src": "446:51:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 80,
+            "name": "acceptors",
+            "nodeType": "VariableDeclaration",
+            "scope": 86,
+            "src": "499:43:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Acceptor_$85_storage_$",
+              "typeString": "mapping(uint256 => struct Donate.Acceptor storage ref)"
+            },
+            "typeName": {
+              "id": 79,
+              "keyType": {
+                "id": 77,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "508:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "499:26:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Acceptor_$85_storage_$",
+                "typeString": "mapping(uint256 => struct Donate.Acceptor storage ref)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 78,
+                "name": "Acceptor",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 85,
+                "src": "516:8:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Acceptor_$85_storage_ptr",
+                  "typeString": "struct Donate.Acceptor storage pointer"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Donate.Acceptor",
+            "id": 85,
+            "members": [
+              {
+                "constant": false,
+                "id": 82,
+                "name": "acceptorName",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "564:19:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string storage pointer"
+                },
+                "typeName": {
+                  "id": 81,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "564:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string storage pointer"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 84,
+                "name": "balance",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "586:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 83,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "586:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Acceptor",
+            "nodeType": "StructDefinition",
+            "scope": 86,
+            "src": "545:57:0",
+            "visibility": "public"
+          }
+        ],
+        "scope": 87,
+        "src": "26:578:0"
+      }
+    ],
+    "src": "0:607:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-19T10:48:45.917Z"
+}
