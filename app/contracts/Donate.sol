@@ -1,61 +1,45 @@
 pragma solidity ^0.4.17;
 
 contract Donate {
- 
-function Donate() public{
-  Donor storage donor1;
-  donor1.id = 1;
-  donor1.donorName  = "Adam";
-  donor1.balance = 1000;
-  Donor storage donor2;
-  donor2.id = 2;
-  donor2.donorName = "Eve";
-  donor2.balance = 1000;
-  
-  donors[0] = donor1;
-  donors[1] = donor2;
-
-  Acceptor storage acc1;
-  acc1.id = 1;
-  acc1.acceptorName = "Xmen";
-  acc1.balance =0;
-  Acceptor storage acc2;
-  acc2.id = 2;
-  acc2.acceptorName = "Foobar";
-  acc2.balance = 0;
-
-  acceptors[0] = acc1;
-  acceptors[1] = acc2;
- }
-
- struct Donor {
+  struct Donor {
   uint id;
-	string donorName;
-	uint balance;
+  string donorName;
+  uint balance;
  }
- 
- Donor[2] donors;
- Acceptor[2] acceptors;
 
  struct Acceptor {
   uint id;
-	string acceptorName;
-	uint balance;
+  string acceptorName;
+  uint balance;
+ }
+ 
+  Donor[] donors;
+ Acceptor[] acceptors;
+ 
+constructor() public{
+  
+  donors.push(Donor(1,"abcd",1000));
+  donors.push(Donor(2,"abcde",1000));
+
+
+  acceptors.push(Acceptor(1,"pqrs",0));
+  acceptors.push(Acceptor(2,"pqrst",0));
+  acceptors.push(Acceptor(3,"blablah",0));
  }
 
  function donateAmount(uint donor_id , uint acceptor_id , uint amount) public{
-	Donor memory current_donor;
+  Donor memory current_donor;
   Acceptor memory target_acceptor;
   for(uint donor = 0 ; donor < donors.length ; donor++){
     if(donors[donor].id == donor_id){
-      current_donor = donors[donor];
+      donors[donor].balance = donors[donor].balance - amount;
       break;
     }
   }
 
   for(uint acceptor = 0 ; acceptor < acceptors.length ; acceptor++){
     if(acceptors[acceptor].id == acceptor_id){
-      target_acceptor = acceptors[acceptor];
+      acceptors[acceptor].balance = acceptors[acceptor].balance + amount;
       break;
     }
   }
@@ -89,4 +73,4 @@ function Donate() public{
  }
 }
 
-	
+  
